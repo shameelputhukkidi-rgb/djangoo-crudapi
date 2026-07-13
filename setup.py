@@ -4,10 +4,11 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="crudapi",
-    version="1.0.0",
+    name="djangoo-crudapi",
+    version="1.0.1",
     author="Mohammed Shameel",
-    author_email="your_email@example.com",
+    author_email="YOUR_EMAIL@gmail.com",
+    url="https://github.com/shameelputhukkidi-rgb/djangoo-crudapi",
     description="Reusable Django CRUD API Package",
     long_description=long_description,
     long_description_content_type="text/markdown",
