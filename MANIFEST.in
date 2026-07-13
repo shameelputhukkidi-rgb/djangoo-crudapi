@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+
+recursive-include crudapi *.py
+recursive-include crudapi/migrations *.py
