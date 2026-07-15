@@ -2,7 +2,11 @@
 
 A reusable Django CRUD API package built with Django REST Framework.
 
-## Features
+This package provides reusable CRUD functionality that can be easily integrated into any Django project.
+
+---
+
+# Features
 
 - Create API
 - Read API
@@ -13,10 +17,11 @@ A reusable Django CRUD API package built with Django REST Framework.
 - Reusable Django App
 - Easy Integration
 - Clean Project Structure
+- Easy to Extend
 
 ---
 
-## Requirements
+# Requirements
 
 - Python 3.10+
 - Django 5.2+
@@ -24,7 +29,7 @@ A reusable Django CRUD API package built with Django REST Framework.
 
 ---
 
-## Installation
+# Installation
 
 ```bash
 pip install djangoo-crudapi
@@ -32,9 +37,11 @@ pip install djangoo-crudapi
 
 ---
 
-## Add to INSTALLED_APPS
+# Quick Start
 
-Open your **settings.py**
+## Step 1 : Add to INSTALLED_APPS
+
+Open **settings.py**
 
 ```python
 INSTALLED_APPS = [
@@ -45,12 +52,12 @@ INSTALLED_APPS = [
 
 ---
 
-## Configure URLs
+## Step 2 : Configure URLs
 
 Open your project's **urls.py**
 
 ```python
-from django.urls import path, include
+from django.urls import include, path
 
 urlpatterns = [
     path("api/", include("crudapi.urls")),
@@ -59,7 +66,7 @@ urlpatterns = [
 
 ---
 
-## Apply Migrations
+## Step 3 : Apply Migrations
 
 ```bash
 python manage.py migrate
@@ -67,13 +74,13 @@ python manage.py migrate
 
 ---
 
-## Run Development Server
+## Step 4 : Run Development Server
 
 ```bash
 python manage.py runserver
 ```
 
-Server will start at:
+Open your browser
 
 ```
 http://127.0.0.1:8000/
@@ -81,36 +88,38 @@ http://127.0.0.1:8000/
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 crudapi/
-│── admin.py
-│── apps.py
-│── exceptions.py
-│── models.py
-│── permissions.py
-│── serializers.py
-│── services.py
-│── tests.py
-│── urls.py
-│── utils.py
-│── validators.py
-│── views.py
-│── migrations/
+│
+├── admin.py
+├── apps.py
+├── exceptions.py
+├── migrations/
+├── models.py
+├── permissions.py
+├── serializers.py
+├── services.py
+├── tests.py
+├── urls.py
+├── utils.py
+├── validators.py
+├── views.py
+└── __init__.py
 ```
 
 ---
 
-## Example
+# Example Usage
 
-Install package
+Install Package
 
 ```bash
 pip install djangoo-crudapi
 ```
 
-Add to Django
+Add the package to Django
 
 ```python
 INSTALLED_APPS = [
@@ -122,21 +131,28 @@ INSTALLED_APPS = [
 Include URLs
 
 ```python
+from django.urls import include, path
+
 urlpatterns = [
     path("api/", include("crudapi.urls")),
 ]
 ```
 
-Run
+Run Migrations
 
 ```bash
 python manage.py migrate
+```
+
+Run Server
+
+```bash
 python manage.py runserver
 ```
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - Python
 - Django
@@ -145,22 +161,64 @@ python manage.py runserver
 
 ---
 
-## Author
+# Package Information
+
+Package Name
+
+```
+djangoo-crudapi
+```
+
+Install Command
+
+```bash
+pip install djangoo-crudapi
+```
+
+PyPI
+
+https://pypi.org/project/djangoo-crudapi/
+
+GitHub
+
+https://github.com/shameelputhukkidi-rgb/djangoo-crudapi
+
+---
+
+# Author
 
 **Mohammed Shameel**
 
-GitHub:
-https://github.com/shameelputhukkidi-rgb
+Python Django Full Stack Developer
 
-PyPI:
-https://pypi.org/project/djangoo-crudapi/
+GitHub
+
+https://github.com/shameelputhukkidi-rgb
 
 ---
 
-## License
+# License
 
 MIT License
 
+You are free to use, modify and distribute this package under the MIT License.
+
 ---
 
-⭐ If you like this project, please give it a star on GitHub.
+# Support
+
+If you find this package useful,
+
+⭐ Star the GitHub repository
+
+🐞 Report issues on GitHub
+
+💡 Suggest new features
+
+---
+
+# Thank You
+
+Thank you for using **djangoo-crudapi**.
+
+Happy Coding! 🚀
